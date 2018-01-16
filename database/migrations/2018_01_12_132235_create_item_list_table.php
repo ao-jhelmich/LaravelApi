@@ -16,8 +16,7 @@ class CreateItemListTable extends Migration
         Schema::create('item_list', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->references('id')->on('users');
-            $table->integer('room_id')->references('id')->on('room');
-            $table->integer('item_id')->references('id')->on('item');
+            $table->string('list_name');
             $table->timestamps();
         });
     }

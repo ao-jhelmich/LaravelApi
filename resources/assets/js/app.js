@@ -7,7 +7,6 @@
 
 require('./bootstrap');
 import './bootstrap';
-import 'angular';
 
 window.Vue = require('vue');
 
@@ -17,7 +16,10 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('items', require('./components/ItemListComponent.vue'));
+Vue.component('game-room-list', require('./components/RoomListComponent.vue'));
+Vue.component('item-list', require('./components/ItemListListComponent.vue'));
+Vue.component('score-list', require('./components/ScoreListComponent.vue'));
 
 const app = new Vue({
     el: '#app'

@@ -13,7 +13,7 @@ class CreateRoomTable extends Migration
      */
     public function up()
     {
-        Schema::create('room,', function (Blueprint $table) {
+        Schema::create('room', function (Blueprint $table) {
             $table->increments('id');
             $table->string('room_name');
             $table->integer('item_list_id')->references('id')->on('item');
@@ -28,6 +28,6 @@ class CreateRoomTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('room,');
+        Schema::dropIfExists('room');
     }
 }
