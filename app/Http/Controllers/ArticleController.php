@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\article;
+use App\Article;
+use App\Console;
+use Illuminate\Support\Facades\Request;
+
 class ArticleController extends Controller
 {
     public function index()
@@ -22,7 +24,7 @@ class ArticleController extends Controller
 
         return response()->json($article, 201);
     }
-
+    
     public function update(Request $request, Article $article)
     {
         $article->update($request->all());

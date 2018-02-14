@@ -18,7 +18,12 @@ window.Vue = require('vue');
 
 Vue.component('items', require('./components/ItemListComponent.vue'));
 Vue.component('game-room-list', require('./components/RoomListComponent.vue'));
-Vue.component('item-list', require('./components/ItemListListComponent.vue'));
+
+// Item list and item components
+Vue.component('item-list', require('./components/Item/ItemListComponent.vue'));
+Vue.component('item-list-create', require('./components/Item/CreateItemListComponent.vue'));
+
+// Score components
 Vue.component('score-list', require('./components/ScoreListComponent.vue'));
 
 const app = new Vue({

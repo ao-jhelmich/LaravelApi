@@ -1,7 +1,7 @@
 <template>
     <div class="box text-center collapsed-box">
         <div class="box-header">
-            <h3 class="box-title text-align-center">your score</h3>
+            <h3 class="box-title text-align-center">Your Items lists</h3>
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i>
                 </button>
@@ -13,16 +13,18 @@
                 <tbody>
                 <tr>
                     <th style="width: 10px">#</th>
-                    <th>Game Name</th>
-                    <th>Kills</th>
-                    <th style="width: 100px">show</th>
+                    <th>List name</th>
+                    <th>Items #</th>
+                    <th style="width: 100px">
+                        <a href="/itemlist"><button type="button" class="btn btn-block btn-success">Add</button></a>                        
+                    </th>
                 </tr>
                 <tr>
                     <td>1.</td>
-                    <td>Murder in Btown</td>
-                    <td>4</td>
+                    <td>Scouts</td>
+                    <td>13</td>
                     <td>
-                        <button type="button" class="btn btn-block btn-warning">Show</button>
+                        <button type="button" class="btn btn-block btn-warning">edit</button>
                     </td>
                 </tr>
                 </tbody>
