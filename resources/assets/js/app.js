@@ -22,6 +22,7 @@ Vue.component('game-room-list', require('./components/RoomListComponent.vue'));
 // Item list and item components
 Vue.component('item-list', require('./components/Item/ItemListComponent.vue'));
 Vue.component('item-list-create', require('./components/Item/CreateItemListComponent.vue'));
+Vue.component('item-create-modal', require('./components/Item/CreateItemModalComponent.vue'));
 
 // Score components
 Vue.component('score-list', require('./components/ScoreListComponent.vue'));
